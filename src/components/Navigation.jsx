@@ -4,8 +4,8 @@ function Navigation() {
     return (
         <HStack
             as={'nav'}
-            pos={'sticky'}
-            top={0}
+            // pos={'sticky'}
+            // top={0}
             align={'center'}
             justify={'center'}
             w={'full'}

@@ -1,4 +1,7 @@
 import { Box } from "@chakra-ui/react";
+
+import AboutMe from "./AboutMe";
+import CoreValues from "./CoreValues";
 import HeroSection from "./HeroSection";
 import Navigation from "./Navigation";
 
@@ -7,6 +10,8 @@ const MainPage = () => {
         <Box>
             <Navigation />
             <HeroSection />
+            <AboutMe />
+            <CoreValues />
         </Box>
     );
 }
