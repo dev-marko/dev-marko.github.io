@@ -14,6 +14,7 @@ import {
     from "@chakra-ui/react";
 
 import { BsGithub, BsLinkedin, BsInstagram, BsFacebook } from "react-icons/bs";
+import { SiHashnode } from "react-icons/si";
 
 const HeroSection = () => {
 
@@ -57,6 +58,7 @@ const HeroSection = () => {
                             color={'brand.neutral'}
                             _hover={{ color: 'brand.primary' }}
                             icon={<BsGithub size={{ base: 'sm', md: 'xs' }} />}
+                            onClick={() => window.open('https://github.com/dev-marko', '_blank')}
                         ></IconButton>
                         <IconButton
                             size={{ base: 'sm', md: 'xs' }}
@@ -64,6 +66,7 @@ const HeroSection = () => {
                             color={'brand.neutral'}
                             _hover={{ color: 'brand.primary' }}
                             icon={<BsLinkedin size={{ base: 'sm', md: 'xs' }} />}
+                            onClick={() => window.open('https://www.linkedin.com/in/marko-spasenovski-6a002b212/', '_blank')}
                         ></IconButton>
                         <IconButton
                             size={{ base: 'sm', md: 'xs' }}
@@ -71,6 +74,7 @@ const HeroSection = () => {
                             color={'brand.neutral'}
                             _hover={{ color: 'brand.primary' }}
                             icon={<BsInstagram size={{ base: 'sm', md: 'xs' }} />}
+                            onClick={() => window.open('https://www.instagram.com/marko.spasenovski/', '_blank')}
                         ></IconButton>
                         <IconButton
                             size={{ base: 'sm', md: 'xs' }}
@@ -78,6 +82,15 @@ const HeroSection = () => {
                             color={'brand.neutral'}
                             _hover={{ color: 'brand.primary' }}
                             icon={<BsFacebook size={{ base: 'sm', md: 'xs' }} />}
+                            onClick={() => window.open('https://www.facebook.com/markospasenovski00', '_blank')}
+                        ></IconButton>
+                        <IconButton
+                            size={{ base: 'sm', md: 'xs' }}
+                            variant={'unstyled'}
+                            color={'brand.neutral'}
+                            _hover={{ color: 'brand.primary' }}
+                            icon={<SiHashnode size={{ base: 'sm', md: 'xs' }} />}
+                            onClick={() => window.open('https://mspasenovski.hashnode.dev/', '_blank')}
                         ></IconButton>
                     </HStack>
                 </Flex>

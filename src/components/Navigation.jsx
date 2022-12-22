@@ -25,7 +25,7 @@ function Navigation() {
                     About
                 </Link>
                 <Link variant={'primary'}>
-                    Projects
+                    Portfolio
                 </Link>
                 <Link variant={'primary'}>
                     Contact

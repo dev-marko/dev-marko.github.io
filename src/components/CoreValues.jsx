@@ -17,16 +17,16 @@ const CoreValues = () => {
                     These are fundamental beliefs and principles that I believe a person (and organization) should try to possess.
                 </Text>
             </Flex>
-            <Flex flexDirection={{base: 'column', md: 'row'}} align={'center'} gap={2} justify={'space-evenly'}>
-                <VStack align={{base: 'center', md: 'start'}}>
-                    <Heading variant={'primary'}>Honesty</Heading>
-                    <Heading variant={'primary'}>Respect</Heading>
-                    <Heading variant={'primary'}>Discipline</Heading>
+            <Flex flexDirection={{ base: 'column', md: 'row' }} align={'center'} gap={2} justify={'space-evenly'}>
+                <VStack align={{ base: 'center', md: 'start' }}>
+                    <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Honesty</Heading>
+                    <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Respect</Heading>
+                    <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Discipline</Heading>
                 </VStack>
-                <VStack align={{base: 'center', md: 'start'}}>
-                    <Heading variant={'primary'}>Fairness</Heading>
-                    <Heading variant={'primary'}>Persistence</Heading>
-                    <Heading variant={'primary'}>Constructive Criticism</Heading>
+                <VStack align={{ base: 'center', md: 'start' }}>
+                    <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Fairness</Heading>
+                    <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Persistence</Heading>
+                    <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Constructive Criticism</Heading>
                 </VStack>
             </Flex>
         </Container>

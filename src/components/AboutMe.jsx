@@ -43,12 +43,14 @@ const AboutMe = () => {
                         <Box>
                             <Text>Age: </Text>
                             <Text>Residence: </Text>
+                            <Text>Education: </Text>
                             <Text>Year Of Study: </Text>
                             <Text>Job Status: </Text>
                         </Box>
                         <Box>
                             <Text color={'brand.primary'}>22</Text>
                             <Text color={'brand.primary'}>Skopje, Macedonia</Text>
+                            <Text color={'brand.primary'}>FCSE per UKIM</Text>
                             <Text color={'brand.primary'}>Senior (4th year)</Text>
                             <Text color={'brand.primary'}>Unemployed</Text>
                         </Box>
