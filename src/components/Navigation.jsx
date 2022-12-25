@@ -1,11 +1,12 @@
 import { Container, HStack, Link } from '@chakra-ui/react'
+import { Link as ReactScrollLink } from "react-scroll";
 
 function Navigation() {
     return (
         <HStack
             as={'nav'}
-            // pos={'sticky'}
-            // top={0}
+            pos={'sticky'}
+            top={0}
             align={'center'}
             justify={'center'}
             w={'full'}
@@ -19,16 +20,24 @@ function Navigation() {
                 gap={'8'}
             >
                 <Link variant={'primary'}>
-                    Home
+                    <ReactScrollLink to="home" spy={true} smooth={true} offset={-50} duration={500}>
+                        Home
+                    </ReactScrollLink>
                 </Link>
                 <Link variant={'primary'}>
-                    About
+                    <ReactScrollLink to="about" spy={true} smooth={true} offset={-50} duration={500}>
+                        About
+                    </ReactScrollLink>
                 </Link>
                 <Link variant={'primary'}>
-                    Portfolio
+                    <ReactScrollLink to="portfolio" spy={true} smooth={true} offset={-35} duration={500}>
+                        Portfolio
+                    </ReactScrollLink>
                 </Link>
                 <Link variant={'primary'}>
-                    Contact
+                    <ReactScrollLink to="contact" spy={true} smooth={true} offset={0} duration={500}>
+                        Contact
+                    </ReactScrollLink>
                 </Link>
             </Container>
         </HStack>

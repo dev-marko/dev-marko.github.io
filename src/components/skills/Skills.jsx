@@ -45,7 +45,7 @@ const Skills = () => {
 
                             )
                     }
-                    <Flex flexWrap={'wrap'} w={'50vh'}>
+                    <Flex flexWrap={'wrap'}>
                         <Text pt={4}>
                             I'm also familiar with the following:
                             PostgreSQL, SQLite, H2, Firebase, Git & Github, Thymeleaf, ChakraUI,
