@@ -1,21 +1,9 @@
-import { Container, VStack, Heading, Box, Spinner } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
-import ProjectCard from "./ProjectCard";
+import { Container, Heading, Box } from "@chakra-ui/react";
 
-import projectsList from "../../data/projects.json";
+import Blog from "./Blog";
+import Projects from "./Projects";
 
 const Portfolio = () => {
-
-    const [projects, setProjects] = useState();
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        setProjects(projectsList);
-        if (projects) {
-            setLoading(false);
-        }
-    }, [projects]);
-
     return (
         <Container
             display={'flex'}
@@ -27,26 +15,8 @@ const Portfolio = () => {
             <Box>
                 <Heading variant={'primary'} size={{ base: 'xl', md: '2xl' }}>Portfolio</Heading>
             </Box>
-            <Box>
-                <Heading variant={'primary'} size={{ base: 'lg', md: 'xl' }}>Projects</Heading>
-            </Box>
-            <VStack align={{ base: 'center', md: 'start' }} w={'full'} spacing={8}>
-                {
-                    loading ?
-                        (
-                            <Spinner />
-                        )
-                        :
-                        (
-                            projects.map((item) => {
-                                return <ProjectCard title={item.title} description={item.description} imageUrl={item.imageUrl} githubLink={item.githubLink} />
-                            })
-                        )
-                }
-            </VStack>
-            <Box>
-                <Heading variant={'primary'} size={{ base: 'lg', md: 'xl' }}>Events</Heading>
-            </Box>
+            <Projects/>
+            <Blog/>
         </Container>
     );
 }

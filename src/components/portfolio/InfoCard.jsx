@@ -19,8 +19,8 @@ const ProjectCard = (props) => {
                 </CardBody>
 
                 <CardFooter>
-                    <Button variant={'primary'} onClick={() => window.open(props.githubLink, '_blank')}>
-                        View On Github
+                    <Button variant={'primary'} onClick={() => window.open(props.buttonLink, '_blank')}>
+                        {props.buttonText}
                     </Button>
                 </CardFooter>
             </Stack>
