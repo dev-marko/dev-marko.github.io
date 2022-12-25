@@ -45,6 +45,10 @@ const Skills = () => {
                         <Progress value={80} colorScheme={'twitter'} borderRadius={5} bg={'brand.subtleShadow'} />
                     </Box>
                     <Box w={'25vh'}>
+                        <Text fontSize={'lg'}>Dart</Text>
+                        <Progress value={65} colorScheme={'twitter'} borderRadius={5} bg={'brand.subtleShadow'} />
+                    </Box>
+                    <Box w={'25vh'}>
                         <Text fontSize={'lg'}>Flutter</Text>
                         <Progress value={40} colorScheme={'twitter'} borderRadius={5} bg={'brand.subtleShadow'} />
                     </Box>
