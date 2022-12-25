@@ -1,7 +1,8 @@
 import { Container, Heading, Box } from "@chakra-ui/react";
 
-import Blog from "./Blog";
 import Projects from "./Projects";
+import Blog from "./Blog";
+import Events from "./Events";
 
 const Portfolio = () => {
     return (
@@ -17,6 +18,7 @@ const Portfolio = () => {
             </Box>
             <Projects/>
             <Blog/>
+            <Events/>
         </Container>
     );
 }
