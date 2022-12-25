@@ -2,7 +2,7 @@ import { Container, VStack, Heading, Box, Spinner } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
-import projectsList from "../data/projects.json";
+import projectsList from "../../data/projects.json";
 
 const Portfolio = () => {
 

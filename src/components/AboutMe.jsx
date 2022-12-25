@@ -30,7 +30,7 @@ const AboutMe = () => {
                     <Text>
                         My current passions are web and mobile development (preferably on the backend side of things). One day
                         I hope to utilize my BSc to the fullest extent and be a part of a team responsible for
-                        software achitecture and design.
+                        software achitecture and design. I plan to start my master studies in 2024.
                     </Text>
                 </VStack>
             </Flex>

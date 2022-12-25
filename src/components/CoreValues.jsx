@@ -17,13 +17,13 @@ const CoreValues = () => {
                     These are fundamental beliefs and principles that I believe a person (and organization) should try to possess.
                 </Text>
             </Flex>
-            <Flex flexDirection={{ base: 'column', md: 'row' }} align={'center'} gap={2} justify={'space-evenly'}>
-                <VStack align={{ base: 'center', md: 'start' }}>
+            <Flex flexDirection={{ base: 'column', md: 'row' }} align={{base: 'start', md: 'center'}} gap={2} justify={'space-evenly'}>
+                <VStack align={'start'}>
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Honesty</Heading>
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Respect</Heading>
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Discipline</Heading>
                 </VStack>
-                <VStack align={{ base: 'center', md: 'start' }}>
+                <VStack align={'start'}>
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Fairness</Heading>
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Persistence</Heading>
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Constructive Criticism</Heading>
