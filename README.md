@@ -5,3 +5,4 @@
 ## Libraries used:
 - Chakra UI
 - React Icons
+- React Scroll
