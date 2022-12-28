@@ -6,3 +6,5 @@
 - Chakra UI
 - React Icons
 - React Scroll
+- EmailJS
+- Formik
