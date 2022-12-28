@@ -6,7 +6,7 @@ import { Link as ReactScrollLink, Element } from "react-scroll";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 
 import AboutMe from "../components/AboutMe";
-import Contact from "../components/Contact";
+import Contact from "../components/contact/Contact";
 import CoreValues from "../components/CoreValues";
 import HeroSection from "../components/HeroSection";
 import Navigation from "../components/Navigation";
