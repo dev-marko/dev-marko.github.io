@@ -51,6 +51,10 @@ const Skills = () => {
                             PostgreSQL, SQLite, H2, Firebase, Git & Github, Thymeleaf, ChakraUI,
                             Postman, Cypress, JUnit, NUnit, Moq, Mockito, PiTest, Stryker.
                         </Text>
+                        <Text pt={4} fontSize={'xs'}>
+                            * The chart isn't meant to represent my knowledge in percentages. It's just here to visually
+                            illustrate that, for example, I'm more comfortable with Spring Boot than Flutter.
+                        </Text>
                     </Flex>
                 </VStack>
                 <VStack w={'full'} align={'start'}>
@@ -64,6 +68,8 @@ const Skills = () => {
                         <Text fontSize={'lg'}>● Public Speaking/Presentation skills</Text>
                         <Text fontSize={'lg'}>● Flexible Approach</Text>
                         <Text fontSize={'lg'}>● Working with Adolescents</Text>
+                        <Text fontSize={'lg'}>● Patience</Text>
+                        <Text fontSize={'lg'}>● Responsibility</Text>
                     </VStack>
                 </VStack>
             </Flex>

@@ -1,8 +1,8 @@
 [
     {
-        "title": "jollyburger",
+        "title": "jollybyte",
         "description": "This is a project our team produced during a one week beginner ReactJS workshop 'DIGIT' organized by SP Finki. We're proud to claim that we won first place.",
-        "imageUrl": "",
+        "imageUrl": "./images/projects/jollybyte.gif",
         "githubLink": "https://github.com/dev-marko/digit-project"
     },
     {
@@ -14,13 +14,13 @@
     {
         "title": "Flora Education",
         "description": "Frontend React prototype application for my Flora Education project. This frontend application is part of my finals project for my faculty course 'Designing Interactive Systems'.",
-        "imageUrl": "",
+        "imageUrl": "./images/projects/flora-education.gif",
         "githubLink": "https://github.com/dev-marko/flora-education"
     },
     {
         "title": "Flora Education API",
         "description": ".NET Core Web API for my Flora Education project. This backend application is part of my finals project for my faculty course 'Designing Interactive Systems'.",
-        "imageUrl": "",
+        "imageUrl": "./images/projects/flora-education-api.png",
         "githubLink": "https://github.com/dev-marko/flora-education-api"
     },
     {
@@ -38,13 +38,13 @@
     {
         "title": "MAPedonija ",
         "description": "MAPedonija is a website that lets you find the location and other relative information of different shops around Macedonia.",
-        "imageUrl": "",
+        "imageUrl": "./images/projects/mapedonija.png",
         "githubLink": "https://github.com/dev-marko/DIANS-FINKI-UKIM"
     },
     {
         "title": "Flora Warehouse Management System",
         "description": "A warehouse management system built using .NET Framework Windows Forms, SQLite and SAP Crystal Reports. This was a project built for my faculty course 'Visual Programming'.",
-        "imageUrl": "",
+        "imageUrl": "./images/projects/project-flora.gif",
         "githubLink": "https://github.com/dev-marko/project-flora"
     }
 ]

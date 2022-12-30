@@ -22,10 +22,12 @@ const CoreValues = () => {
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Honesty</Heading>
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Respect</Heading>
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Discipline</Heading>
+                    <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Kindness</Heading>
                 </VStack>
                 <VStack align={'start'}>
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Fairness</Heading>
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Persistence</Heading>
+                    <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Self-Awareness</Heading>
                     <Heading variant={'primary'} size={{ base: 'md', md: 'lg' }}>● Constructive Criticism</Heading>
                 </VStack>
             </Flex>

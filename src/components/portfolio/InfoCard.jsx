@@ -25,16 +25,14 @@ const ProjectCard = (props) => {
                 </CardFooter>
             </Stack>
             <Flex justify={'center'} align={'center'} w={'full'}>
-                <Box>
-                    <Image
-                        borderRadius={50}
-                        py={4}
-                        objectFit='cover'
-                        maxW={{ base: '100%', sm: '450px' }}
-                        src={props.imageUrl === "" ? './images/projects/placeholder.png' : props.imageUrl}
-                        alt='Project Image'
-                    />
-                </Box>
+                <Image
+                    borderRadius={50}
+                    py={4}
+                    objectFit='cover'
+                    maxW={{ base: '85%', sm: '75%' }}
+                    src={props.imageUrl === "" ? './images/projects/placeholder.png' : props.imageUrl}
+                    alt='Project Image'
+                />
             </Flex>
         </Card>
     );

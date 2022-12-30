@@ -36,7 +36,7 @@ const ContactForm = () => {
     function validateEmail(value) {
         let error;
         if (!value) {
-            error = 'Required';
+            error = 'Email is required';
         } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
             error = 'Invalid email address';
         }
@@ -85,16 +85,15 @@ const ContactForm = () => {
             }
             <Formik
                 initialValues={{ name: '', email: '', subject: '', message: '' }}
-                onSubmit={(values, { setSubmitting, resetForm }) => {
-                    emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, values, process.env.REACT_APP_EMAILJS_USER_ID)
-                        .then((result) => {
-                            setSubmitting(false);
-                            resetForm();
-                            onOpen();
-                            console.log(result.text);
-                        }, (error) => {
-                            console.log(error.text);
-                        });
+                onSubmit={async (values, { setSubmitting, resetForm }) => {
+                    try {
+                        await emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, values, process.env.REACT_APP_EMAILJS_USER_ID)
+                        setSubmitting(false);
+                        resetForm();
+                        onOpen();
+                    } catch (error) {
+                        console.log(error);
+                    }
                 }}
             >
                 {(props) => (
@@ -109,7 +108,8 @@ const ContactForm = () => {
                                             {...field}
                                             type="text"
                                             name="name"
-                                            placeholder="Your Name" />
+                                            placeholder="Your Name"
+                                            autoComplete='off' />
                                     </InputGroup>
                                     <FormErrorMessage>{form.errors.name}</FormErrorMessage>
                                 </FormControl>
@@ -126,7 +126,8 @@ const ContactForm = () => {
                                             {...field}
                                             type="email"
                                             name="email"
-                                            placeholder="Your Email" />
+                                            placeholder="Your Email"
+                                            autoComplete='off' />
                                     </InputGroup>
                                     <FormErrorMessage>{form.errors.email}</FormErrorMessage>
                                 </FormControl>
@@ -142,7 +143,8 @@ const ContactForm = () => {
                                             {...field}
                                             type="text"
                                             name="subject"
-                                            placeholder="Email subject" />
+                                            placeholder="Email subject"
+                                            autoComplete='off' />
                                     </InputGroup>
                                     <FormErrorMessage>{form.errors.subject}</FormErrorMessage>
                                 </FormControl>

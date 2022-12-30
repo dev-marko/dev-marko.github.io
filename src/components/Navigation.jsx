@@ -20,22 +20,22 @@ function Navigation() {
                 gap={'8'}
             >
                 <Link variant={'primary'}>
-                    <ReactScrollLink to="home" spy={true} smooth={true} offset={-50} duration={500}>
+                    <ReactScrollLink to="home" spy={true} smooth={true} offset={-50} duration={200}>
                         Home
                     </ReactScrollLink>
                 </Link>
                 <Link variant={'primary'}>
-                    <ReactScrollLink to="about" spy={true} smooth={true} offset={-50} duration={500}>
+                    <ReactScrollLink to="about" spy={true} smooth={true} offset={-50} duration={200}>
                         About
                     </ReactScrollLink>
                 </Link>
                 <Link variant={'primary'}>
-                    <ReactScrollLink to="portfolio" spy={true} smooth={true} offset={-35} duration={500}>
+                    <ReactScrollLink to="portfolio" spy={true} smooth={true} offset={-35} duration={200}>
                         Portfolio
                     </ReactScrollLink>
                 </Link>
                 <Link variant={'primary'}>
-                    <ReactScrollLink to="contact" spy={true} smooth={true} offset={0} duration={500}>
+                    <ReactScrollLink to="contact" spy={true} smooth={true} offset={0} duration={200}>
                         Contact
                     </ReactScrollLink>
                 </Link>

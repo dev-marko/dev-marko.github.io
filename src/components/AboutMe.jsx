@@ -59,39 +59,39 @@ const AboutMe = () => {
                 <Box w={'full'}>
                     <Heading variant={'primary'} size={{ base: 'lg', md: 'xl' }}>My Interests</Heading>
                     <Flex w={'full'} align={'center'} justify={'start'} flexWrap={'wrap'} gap={3} p={{ base: 0, md: 4 }}>
-                        <VStack spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
+                        <VStack w={20} h={16} spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
                             <Icon ms={1} as={FiCoffee} boxSize={6} color={'brand.primaryContainer'} />
                             <Text color={'brand.primaryContainer'}>Coffee</Text>
                         </VStack>
-                        <VStack spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
+                        <VStack w={20} h={16} spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
                             <Icon ms={1} as={FiMusic} boxSize={6} color={'brand.primaryContainer'} />
                             <Text color={'brand.primaryContainer'}>Music</Text>
                         </VStack>
-                        <VStack spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
+                        <VStack w={20} h={16} spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
                             <Icon ms={1} as={FaHiking} boxSize={6} color={'brand.primaryContainer'} />
                             <Text color={'brand.primaryContainer'}>Hiking</Text>
                         </VStack>
-                        <VStack spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
+                        <VStack w={20} h={16} spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
                             <Icon ms={1} as={FaSkiing} boxSize={6} color={'brand.primaryContainer'} />
                             <Text color={'brand.primaryContainer'}>Skiing</Text>
                         </VStack>
-                        <VStack spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
+                        <VStack w={20} h={16} spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
                             <Icon ms={1} as={IoCarSportSharp} boxSize={6} color={'brand.primaryContainer'} />
                             <Text color={'brand.primaryContainer'}>Cars</Text>
                         </VStack>
-                        <VStack spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
+                        <VStack w={20} h={16} spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
                             <Icon ms={1} as={FaBasketballBall} boxSize={6} color={'brand.primaryContainer'} />
                             <Text fontSize={{ base: 'sm', md: 'md' }} color={'brand.primaryContainer'}>Basketball</Text>
                         </VStack>
-                        <VStack spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
+                        <VStack w={20} h={16} spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
                             <Icon ms={1} as={GoBook} boxSize={6} color={'brand.primaryContainer'} />
                             <Text color={'brand.primaryContainer'}>Reading</Text>
                         </VStack>
-                        <VStack spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
+                        <VStack w={20} h={16} spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
                             <Icon ms={1} as={BiCameraMovie} boxSize={6} color={'brand.primaryContainer'} />
                             <Text color={'brand.primaryContainer'}>Movies</Text>
                         </VStack>
-                        <VStack spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
+                        <VStack w={20} h={16} spacing={0} bg={'brand.neutral'} p={2} align={'center'} justify={'center'} borderRadius={5}>
                             <Icon ms={1} as={GiCookingPot} boxSize={6} color={'brand.primaryContainer'} />
                             <Text color={'brand.primaryContainer'}>Cooking</Text>
                         </VStack>

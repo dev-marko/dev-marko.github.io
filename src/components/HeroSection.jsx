@@ -15,6 +15,7 @@ import {
 
 import { BsGithub, BsLinkedin, BsInstagram, BsFacebook } from "react-icons/bs";
 import { SiHashnode } from "react-icons/si";
+import MyCV from "../assets/cv.pdf";
 
 const HeroSection = () => {
 
@@ -46,7 +47,9 @@ const HeroSection = () => {
                         justify={{ base: 'center', md: 'start' }}
                         align={{ base: 'center', md: 'start' }}
                     >
-                        <Button variant={'primary'}>Download CV</Button>
+                        <a href={MyCV} download="Marko-Spasenovski-CV.pdf">
+                            <Button variant={'primary'}>Download CV</Button>
+                        </a>
                     </HStack>
                     <HStack
                         justify={"center"}
@@ -103,7 +106,7 @@ const HeroSection = () => {
                         borderRadius={'20px'} />
                 </Box>
             </Container>
-            <Divider borderColor={'brand.subtleShadow'} my={8}/>
+            <Divider borderColor={'brand.subtleShadow'} my={8} />
         </>
     );
 }
