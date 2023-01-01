@@ -11,7 +11,7 @@ const CoreValues = () => {
         >
             <Flex flexDirection={'column'} gap={{ base: 2, md: 4 }}>
                 <Box>
-                    <Heading variant={'primary'} size={{ base: 'xl', md: '2xl' }}>My Core values</Heading>
+                    <Heading variant={'primary'} size={{ base: 'xl', md: '2xl' }}>My Core Values</Heading>
                 </Box>
                 <Text fontSize='md'>
                     These are fundamental beliefs and principles that I believe a person (and organization) should try to possess.
