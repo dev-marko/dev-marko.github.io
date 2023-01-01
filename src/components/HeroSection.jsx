@@ -101,7 +101,7 @@ const HeroSection = () => {
                     <Image
                         h={{ base: 'sm', md: 'md' }}
                         objectFit='scale-down'
-                        src={'./images/portrait.jpg'}
+                        src={'./images/portrait.JPG'}
                         alt="picture of marko spasenovski"
                         borderRadius={'20px'} />
                 </Box>
