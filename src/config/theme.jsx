@@ -39,6 +39,9 @@ const theme = extendTheme({
             variants: {
                 'primary': {
                     color: 'brand.neutral'
+                },
+                'secondary': {
+                    color: 'brand.primary'
                 }
             }
         },

@@ -1,0 +1,14 @@
+[
+  {
+    "tech": "Spring Boot with Java"
+  },
+  {
+    "tech": ".NET (MVC 5, WebAPI) with C#"
+  },
+  {
+    "tech": "React with JavaScript"
+  },
+  {
+    "tech": "C/C++"
+  }
+]

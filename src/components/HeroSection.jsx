@@ -9,8 +9,7 @@ import {
     Image,
     IconButton,
     Flex,
-    Divider,
-    Icon
+    Divider
 }
     from "@chakra-ui/react";
 

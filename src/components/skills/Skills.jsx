@@ -2,20 +2,23 @@ import { useState, useEffect } from "react";
 
 import { Box, Container, Flex, Heading, Text, VStack, Spinner } from "@chakra-ui/react";
 
-import techSkillsList from "../../data/skills.json";
-import TechSkillChart from "./TechSkillChart";
+import comfortTechSkillsList from "../../data/comfort-skills.json";
+import furtherDevelopingSkillsList from "../../data/further-developing-skills.json";
+import TechSkill from "./TechSkill";
 
 const Skills = () => {
 
-    const [techSkills, setTechSkills] = useState();
+    const [comfortTechSkills, setComfortTechSkills] = useState();
+    const [developingTechSkills, setDevelopingTechSkills] = useState();
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setTechSkills(techSkillsList);
-        if (techSkills) {
+        setComfortTechSkills(comfortTechSkillsList);
+        setDevelopingTechSkills(furtherDevelopingSkillsList);
+        if (comfortTechSkills && developingTechSkills) {
             setLoading(false);
         }
-    }, [techSkills]);
+    }, [comfortTechSkills, developingTechSkills]);
 
     return (
         <Container
@@ -30,7 +33,9 @@ const Skills = () => {
             </Box>
             <Flex flexDirection={{ base: 'column', md: 'row' }} gap={{ base: 4 }}>
                 <VStack w={'full'} align={'start'}>
+
                     <Heading variant={'primary'} size={{ base: 'lg', md: 'xl' }}>Technical Skills</Heading>
+                    <Heading variant={'primary'} size={'md'}>📖 Focused on further developing:</Heading>
                     {
                         loading ?
                             (
@@ -38,9 +43,22 @@ const Skills = () => {
                             )
                             :
                             (
+                                developingTechSkills.map((item) => {
+                                    return <TechSkill tech={item.tech} />
+                                })
 
-                                techSkills.map((item) => {
-                                    return <TechSkillChart tech={item.tech} knowledge={item.knowledge} />
+                            )
+                    }
+                    <Heading pt={3} variant={'primary'} size={'md'}>🛏️ Comfort zone:</Heading>
+                    {
+                        loading ?
+                            (
+                                <Spinner />
+                            )
+                            :
+                            (
+                                comfortTechSkills.map((item) => {
+                                    return <TechSkill tech={item.tech} />
                                 })
 
                             )
@@ -51,25 +69,21 @@ const Skills = () => {
                             PostgreSQL, SQLite, H2, Firebase, Git & Github, Thymeleaf, ChakraUI,
                             Postman, Cypress, JUnit, NUnit, Moq, Mockito, PiTest, Stryker.
                         </Text>
-                        <Text pt={4} fontSize={'xs'}>
-                            * The chart isn't meant to represent my knowledge in percentages. It's just here to visually
-                            illustrate that, for example, I'm more comfortable with Spring Boot than Flutter.
-                        </Text>
                     </Flex>
                 </VStack>
                 <VStack w={'full'} align={'start'}>
                     <Heading variant={'primary'} size={{ base: 'lg', md: 'xl' }}>Interpersonal Skills</Heading>
                     <VStack w={'full'} align={'start'}>
-                        <Text fontSize={'lg'}>● Leadership</Text>
-                        <Text fontSize={'lg'}>● Teamwork</Text>
-                        <Text fontSize={'lg'}>● Management</Text>
-                        <Text fontSize={'lg'}>● Communication</Text>
-                        <Text fontSize={'lg'}>● Negotiation</Text>
-                        <Text fontSize={'lg'}>● Public Speaking/Presentation skills</Text>
-                        <Text fontSize={'lg'}>● Flexible Approach</Text>
-                        <Text fontSize={'lg'}>● Working with Adolescents</Text>
-                        <Text fontSize={'lg'}>● Patience</Text>
-                        <Text fontSize={'lg'}>● Responsibility</Text>
+                        <Text fontSize={'lg'} color={'brand.neutral'}>● Leadership</Text>
+                        <Text fontSize={'lg'} color={'brand.neutral'}>● Teamwork</Text>
+                        <Text fontSize={'lg'} color={'brand.neutral'}>● Management</Text>
+                        <Text fontSize={'lg'} color={'brand.neutral'}>● Communication</Text>
+                        <Text fontSize={'lg'} color={'brand.neutral'}>● Negotiation</Text>
+                        <Text fontSize={'lg'} color={'brand.neutral'}>● Public Speaking/Presentation skills</Text>
+                        <Text fontSize={'lg'} color={'brand.neutral'}>● Flexible Approach</Text>
+                        <Text fontSize={'lg'} color={'brand.neutral'}>● Working with Adolescents</Text>
+                        <Text fontSize={'lg'} color={'brand.neutral'}>● Patience</Text>
+                        <Text fontSize={'lg'} color={'brand.neutral'}>● Responsibility</Text>
                     </VStack>
                 </VStack>
             </Flex>
